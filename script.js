@@ -13,14 +13,9 @@ console.log(multiple(1512));
 
 console.log('Zadanie 3');
 
-const average = (...args) => {
-  
-  const sum = args.reduce( (a, b) => a + b);
-  
-  return sum / args.length;
+const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 
-};
-console.log(average(2, 2));
+console.log(average(5, 2));
 
 
 console.log('Zadanie 4');

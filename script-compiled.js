@@ -23,13 +23,12 @@ var average = function average() {
     args[_key] = arguments[_key];
   }
 
-  var sum = args.reduce(function (a, b) {
+  return args.reduce(function (a, b) {
     return a + b;
-  });
-
-  return sum / args.length;
+  }) / args.length;
 };
-console.log(average(2, 2));
+
+console.log(average(5, 2));
 
 console.log('Zadanie 4');
 
